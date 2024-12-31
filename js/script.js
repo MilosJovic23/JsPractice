@@ -6,28 +6,27 @@
 
 $(document).ready(function () {
 	$("#sirina").keydown(function () {
-		console.log("test");
 
 		var sirinaElementa = $("#sirina").val();
 
 		$("#element").css({
 			width: sirinaElementa,
 		});
-		$("#visina").keydown(function () {
-			console.log("test");
+	$("#visina").keydown(function () {
+
 			var visinaElementa = $("#visina").val();
 			$("#element").css({
 				height: visinaElementa,
 			});
 		});
-		$("#range").on("input", function () {
-			console.log("Test");
+	$("#range").on("input", function () {
+
 			var zaobljeniRubovi = $("#range").val();
 			$("#element").css("border-radius", "" + zaobljeniRubovi + "px");
 		});
 
-		$("#color").on("input", function () {
-			console.log("test");
+	$("#color").on("input", function () {
+
 			var boja = $(this).val();
 			$("#element").css("backgroundColor", boja);
 		});
